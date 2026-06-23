@@ -23,7 +23,7 @@
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-luxury-stone: #F3F1ED;
     --color-luxury-border: #E5E2DE;
-
+    --tw-space-y-reverse: 0;
     --spacing: 0.25rem;
     --translate-y: calc(var(--spacing) * 4);
     --translate-x: calc(var(--spacing) * 4);
@@ -174,7 +174,7 @@ nav a{
     letter-spacing: 0.1rem;
     font-weight: 300;
     font-size: 10px;
-    font-family: "JetBrains Mono", monospace;
+    font-family: 'JetBrains Mono', monospace;
     gap: 12px;
     padding: 4px 12px;
     margin-bottom: 1rem;
@@ -525,4 +525,58 @@ blockquote > p{
     padding: calc(var(--spacing) * 3);
     height: 123px;
     width: 228px;
+}
+
+/* Review */
+
+.review{
+    background: url(assets/images/photo-1512917774080-9991f1c4c750.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.review > .overlay{
+    border-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) fill 1;
+}
+.review .container{
+    justify-content: center;
+}
+.review-stars{
+    display: flex;
+    justify-content: center;
+    color: var(--color-gold-400);
+    margin-bottom: 24px;
+}
+.review h3{
+    font-size: 1.875rem;
+    line-height: 1.625, calc(2.25/1.875);
+    font-style: italic;
+    color: var(--color-gold-100);
+    font-weight: 300;
+    max-width: 48rem;
+    margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+}
+.review h4{
+    text-transform: uppercase;
+    color: var(--color-gold-400);
+    letter-spacing: var(--tracking-widest);
+    font-weight: 700;
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    margin-block-start: calc(var(--spacing) * var(--tw-space-y-reverse));
+    margin-block-end: calc(var(--spacing) * calc(1 - var(--tw-space-y-reverse)));
+}
+.review p{
+    color: var(--color-luxury-silver);
+    font-size: 0.75rem;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-luxury-charcoal);
 }
