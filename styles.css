@@ -496,11 +496,12 @@ blockquote > p{
 .portfolio-card-info{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding-top: calc(var(--spacing) * 4);
     margin-top: calc(var(--spacing) * 2);
     border-top: 1px solid color-mix(in oklab, var(--color-gold-200) 40%, transparent);
     cursor: pointer;
+    height: 60px;
 }
 .portfolio-card-title{
     padding-right: calc(var(--spacing) * 4);
@@ -536,8 +537,14 @@ blockquote > p{
     justify-content: center;
     align-items: center;
     padding: calc(var(--spacing) * 3);
+    overflow: hidden;
+    object-fit: fill;
     /* height: 123px;
     width: 228px; */
+}
+.portfolio-card-img img{
+    height: 100%;
+    width: auto;
 }
 .premium{
     color: var(--color-gray-500);
