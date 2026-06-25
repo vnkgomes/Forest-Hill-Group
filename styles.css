@@ -114,6 +114,8 @@
     --tw-shadow-alpha: 100%;
     --tw-shadow: 0 0 #0000;
     --tw-inset-shadow: 0 0 #0000;
+    --translate-x: calc(var(--spacing) * 4);
+    --translate-y: calc(var(--spacing) * 4);
 }
 html {
     scroll-behavior: smooth;
@@ -352,6 +354,7 @@ h1{
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 5px;
+    z-index: 5;
 }
 .img-container img{
     object-fit: cover;
@@ -366,6 +369,7 @@ h1{
     border: 1px solid var(--color-gold-400);
     border-radius: 5px;
     translate: var(--translate-x) var(--translate-y);
+    z-index: 4;
 }
 .right-container{
     display: flex;
